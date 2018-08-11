@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="rvs-menu">
+        <ul class="rvs-ul">
+            <li class="rvs-li"><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Главная</a></li>
+            <li class="rvs-li"><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Услуги</a></li>
+            <li class="rvs-li"><a href="#"><i class="fa fa-server" aria-hidden="true"></i>Инструменты</a></li>
+            <li class="rvs-li"><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>Контакты</a></li>
+            <li class="rvs-li"><a href="#"><i class="fa fa-folder-open" aria-hidden="true"></i>Новости</a></li>
+        </ul>
+    </div>
+   <table class="table-1">
+   <caption class="caption-1">Отправить тендер на проверку</caption>
+    <tr class="tr-1">
+     <td class="td-1">
+      <form action="index.html" method="get" enctype="multipart/form-data">
+        <input class="pole" type="text" name="text" placeholder="Введите номер закупки, Например: 0361200015018004403"><br>
+        <input class="pole" type="phone" name="phone" pattern="[0-9]{11}" placeholder="Ваш номер телефона: 79876543210"><br>
+        <input class="pole" type="email" name="mail" placeholder="Ваш E-mail:"><br>
+        <input class="pole" type="file" name="fiel"><br>
+        <input class="knopka" type="submit" value="Отправить">
+        <input class="reset" type="reset" value="Очистить">
+       </form>
+      </td>
+     </tr>
+    </table>
+    
+    <table class="table-2">
+   <caption class="caption-2">Проверка контрагента</caption>
+    <tr class="tr-2">
+     <td class="td-2">
+      <form action="index.html" method="get" enctype="multipart/form-data">
+        <input class="poisk" type="search" name="q" placeholder="Введите ИНН, ОГРН, название компании"> 
+        <input class="knopka-poiska" type="submit" value="Поиск">
+       </form>
+      </td>
+     </tr>
+    </table>
+</body>
+</html>

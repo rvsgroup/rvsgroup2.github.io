@@ -1,0 +1,154 @@
+body {
+    background: #ffffff;
+}
+
+.table-1 {
+    border: 3px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    width: 40%; height: auto;
+    position: absolute;
+    left: 550px;
+    top: 200px
+}
+
+.table-2 {
+    border: 3px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    width: 40%; height: auto;
+    position: absolute;
+    left: 550px;
+    top: 500px
+}
+.caption-1, .caption-2 {
+    font-size: 30px;
+    padding: 1px;
+}
+
+.td-1, .td-2 {
+     padding: 20px;
+}
+
+.pole {
+    width: 500px; 
+    height: auto;
+    padding: 5px;
+    margin: 2px;
+}
+
+.poisk {
+    width: 458px; 
+    height: auto;
+    padding: 5px;
+    margin: 2px;
+}
+
+.knopka-poiska {
+    width: 100px;
+    height: 30px;
+}
+
+.knopka {
+    width: 200px;
+    height: 25px;
+}
+
+.reset {
+    width: 200px;
+    height: 25px;
+}
+
+input:focus {
+    border-color: #1ec2ff;
+}
+
+input {
+    border-color: #3ecbff;
+}
+
+input:hover {
+    background-color: #fcf8e3;
+}
+.knopka:hover {
+    background-color: #6af7ab;
+}
+
+.reset:hover {
+    background-color: #f87171;
+}
+
+.tr-1:hover {
+    background-color: #fcfcfc;
+}
+.tr-2:hover {
+    background-color: #fcfcfc;
+}
+
+body{
+ background-image: url("../img/escheresque_ste.png");
+ font-family: Verdana;
+
+}
+
+.rvs-menu{
+ background-color: #ffffff;
+ border: 1px solid #3ecbff;
+ margin-top: 100px;
+ width: 100%;
+}
+ul.rvs-ul{
+ display: flex;
+ padding: 0;
+ justify-content: center;
+}
+li.rvs-li{
+ list-style: none;
+ padding: 10px;
+}
+li.rvs-li a{
+ text-decoration: none;
+ font-size: 18px;
+ color: #000;
+ position: relative;
+ padding: 5px;
+}
+li.rvs-li a i{
+ margin-right: 10px;
+}
+li.rvs-li a::before{
+ content: '';
+ width: 0;
+ height: 3px;
+ background-color: #33bdf1;
+ position: absolute;
+ top: 90%;
+ left: 0;
+ transition: .5s;
+ mix-blend-mode: multiply;
+}
+li.rvs-li a::after{
+ content: '';
+ width: 0;
+ height: 3px;
+ background-color: #07ef8c;
+ position: absolute;
+ top: 90%;
+ right: 0;
+ transition: .5s;
+ mix-blend-mode: multiply;
+}
+li.rvs-li:hover{
+ background-color: #e5eae8;
+}
+li.rvs-li:hover a::before{
+ width: 50%;
+ transform: translateX(100%);
+}
+li.rvs-li:hover a::after{
+ width: 50%;
+ transform: translateX(-100%);
+}
+li.rvs-li a:hover{
+ color: #0586f5;
+}
